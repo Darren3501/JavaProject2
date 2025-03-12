@@ -13,6 +13,6 @@ public class mahin_project2
 
 	}
 	
-	public static 
+	
 
 }
