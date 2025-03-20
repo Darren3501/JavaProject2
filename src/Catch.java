@@ -14,9 +14,16 @@ public class Catch
 		
 	}
 	
-	public Catch(String license, String name, float weight, int length, int catchDay, int catchMonth, int catchYear)
+	public Catch(String license, String name, float weight, int length, int catchYear, int catchMonth, int catchDay)
 	{
-		
+		this.license = license;
+		this.name = name;
+		this.weight = weight;
+		this.length = length;
+		this.catchDay = catchDay;
+		this.catchMonth = catchMonth;
+		this.catchYear = catchYear;
+				
 	}
 
 	public String getLicense() {
@@ -77,7 +84,6 @@ public class Catch
 	
 	public String toString()
 	{
-		String returnMe = "";
-		return returnMe;
+		return "Angler " + license + " caught a " + name + ": " + weight + "lbs, " + length + "inches, on " + catchYear + "/" + catchMonth + "/" + catchDay;
 	}
 }
