@@ -180,7 +180,16 @@ public class mahin_project2
 			{
 				System.out.println("What was the month (number)?");
 				month = in.nextInt(); 
-				break;
+				
+				if(month <= 12 && month > 0)
+				{
+					break;
+				}
+				else
+				{
+					System.out.println("Please enter a number between 1 and 12.");
+					in.nextLine();
+				}
 			}
 			catch(Exception e)
 			{
@@ -196,7 +205,16 @@ public class mahin_project2
 			{
 				System.out.println("What was the day (number)?");
 				day = in.nextInt(); 
-				break;
+				
+				if(day <= 31 && day > 0)
+				{
+					break;
+				}
+				else
+				{
+					System.out.println("Please enter a number between 1 and 31.");
+					in.nextLine();
+				}
 			}
 			catch(Exception e)
 			{
